@@ -1,0 +1,85 @@
+/* Style for the add form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the add link */
+.add-link {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add-link:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for the delete link */
+.delete-link {
+    display: inline-block;
+    background-color: #FF4C4C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.delete-link:hover {
+    background-color: #FF0000;
+}
+
+/* Style for the update link */
+.update-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.update-link:hover {
+    background-color: #45A049;
+}
