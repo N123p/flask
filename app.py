@@ -6,7 +6,7 @@ app = Flask(__name__)
 # JSON file location
 DATA_FILE = 'blog_posts.json'
 
-# Function to load blog posts from JSON
+# Function to load blog  from JSON
 def load_blog_posts():
     try:
         with open(DATA_FILE, 'r') as file:
@@ -14,10 +14,18 @@ def load_blog_posts():
     except FileNotFoundError:
         return []
 
-# Function to save blog posts to JSON
+# Function to save blog  to JSON
 def save_blog_posts(posts):
     with open(DATA_FILE, 'w') as file:
         json.dump(posts, file, indent=4)
+
+def fetch_post_by_id(post_id):
+    blog_posts = load_blog_posts()
+    for post in blog_posts:
+        if post['id'] == post_id:
+            return post
+    return None
+
 
 @app.route('/')
 def index():
